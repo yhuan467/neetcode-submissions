@@ -1,0 +1,11 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+        int diff = target - nums[i];
+        if (prevMap.containsKey(diff)) {
+            return new int[]{prevMap.get(diff), i};
+        }
+        prevMap.put(nums[i], i);
+}
+    }
+}
